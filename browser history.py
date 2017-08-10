@@ -15,7 +15,7 @@ cursor.execute(select_statement)
 
 result=cursor.fetchall()
 result=list(set(result))
-file=open("URLS.txt","w")
+file=open("URLS_jaggu.txt","w")
 
 file.writelines(["%s\n" % item  for item in result])
 
